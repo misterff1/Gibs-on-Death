@@ -1,4 +1,4 @@
--- Suicide version 1.0  |  by Misterff1
+-- GibsOnDeath version 1.0  |  by Misterff1
 
 
 function PlayerDeath(args)
