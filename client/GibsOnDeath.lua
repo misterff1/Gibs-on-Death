@@ -1,9 +1,15 @@
--- GibsOnDeath version 1.0  |  by Misterff1
+--------------------------------------------------------------------------------------------
+----|                                Gibs on Death v1.0                                |----
+----|                                   By Misterff1                                   |----
+--------------------------------------------------------------------------------------------
 
 
-function Gibsspawn(pos)
-   ClientEffect.Play(AssetLocation.Game, { effect_id = 429, position = pos, angle = Angle() }) --Change the effect_id to something else to change the effect
+-- In this clientfile, all we need to do is play the effect at the location the server defines --
+function SpawnGibs( pos )
+   
+   ClientEffect.Play( AssetLocation.Game, { effect_id = 429, position = pos, angle = Angle() } )
+      
 end
 
-Network:Subscribe("Gibsspawn", Gibsspawn)
+Network:Subscribe("SpawnGibs", SpawnGibs)
 
